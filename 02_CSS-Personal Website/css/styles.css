@@ -1,0 +1,165 @@
+/* tag selector */
+body {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+hr {
+    border: dotted #c55a20 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 2.5rem auto 2.5rem;
+    ;
+}
+
+h1 {
+    color: #66BFBF;
+}
+
+h2 {
+    color: #66BFBF;
+    font-size: 3.5rem;
+}
+
+h3 {
+    color: #66BFBF;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #40514E;
+    font-size: 1rem;
+}
+
+a{
+    display:inline-block;
+    padding-inline: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #11999E;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+button{
+    margin-bottom: 5rem;
+}
+
+/* introduction */
+    /* id selector */
+
+
+    /* class selector */
+    .introduction-section-1 {
+        position: relative;
+        padding-top: 5rem;
+        background-color: #E4F9F5;
+    }
+
+    .introduction-pro {
+        text-decoration: underline;
+    }
+
+    .introduction-cloud-image-2 {
+        position: absolute;
+    }
+
+    .introduction-cloud-image-1 {
+        position: absolute;
+        left: 70%;
+    }
+
+    .introduction-mountain-image {
+        width: 50rem;
+        height: 35rem;
+    }
+
+    .introduction-section-2 {
+        position: relative;
+        margin-top: 5rem;
+    }
+
+    /* hierarchial selectors */
+    .introduction-section-1 h1 {
+
+        font-family: 'Sacramento', cursive;
+        font-size: 7rem;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+
+    .introduction-section-1 h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+
+    }
+
+    .introduction-section-2 p {
+        color: #40514E;
+        font-size: 2rem;
+        padding-left: 22%;
+        padding-right: 22%;
+    }
+
+    /* combined selectors */
+
+/* skills */
+    /* id selector */
+
+
+    /* class selector */
+    .my-skills {
+        width: 50%;
+        margin: auto;
+    }
+
+    .my-skills-web-design {
+        margin: 2rem auto 8rem;
+        text-align: left;
+    }
+
+    .my-skills-coding-image {
+        float: left;
+        margin: auto 2rem 2rem auto;
+    }
+
+    .my-skills-ml {
+        text-align: left;
+    }
+
+    .my-skills-ml-image {
+        float: right;
+        width: 25%;
+        height: 25%;
+        margin-left: 2rem;
+
+    }
+
+    /* hierarchial selectors */
+    .my-skills h3 {
+        padding-top: 2rem;
+    }
+
+    /* combined selectors */
+
+/* footer */
+    /* id selector */
+
+
+    /* class selector */
+    .footer{
+        background-color: #66BFBF;
+    }
+
+    /* hierarchial selectors */
+    .footer p{
+        color: #EAF6F6;
+        padding-bottom: 2rem;
+    }
+
+    /* combined selectors */
+
+
+
+
