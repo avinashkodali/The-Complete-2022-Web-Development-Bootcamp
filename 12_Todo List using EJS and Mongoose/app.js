@@ -4,15 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
-const fs = require('fs');
-
-fs.readFile('/Users/joe/test.txt', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  const mongodbUrl=data;
-});
+const dotenv = require('dotenv');
 
 const app = express();
 
@@ -20,6 +12,10 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+
+
+dotenv.config();
+const mongodbUrl = process.env.MONGOLAB_URI;
 
 mongoose.connect(mongodbUrl+"/todolistDB", {useNewUrlParser: true});
 
@@ -145,6 +141,11 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+let port=process.env.PORT;
+if(port == null || port == ""){
+  port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("Server started on port "+port);
 });
