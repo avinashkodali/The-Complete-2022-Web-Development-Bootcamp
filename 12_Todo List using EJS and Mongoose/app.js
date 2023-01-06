@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-avinash_kodali:Avinash@cluster0.jvbhy29.mongodb.net/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
   name: String
@@ -51,8 +51,9 @@ app.get("/", function(req, res) {
       Item.insertMany(defaultItems, function(err){
         if (err) {
           console.log(err);
-        } else {
-          console.log("Successfully savevd default items to DB.");
+        } 
+        else {
+          console.log("Successfully saved default items to DB.");
         }
       });
       res.redirect("/");
