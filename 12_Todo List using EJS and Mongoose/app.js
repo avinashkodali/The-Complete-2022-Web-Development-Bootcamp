@@ -4,6 +4,15 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
+const fs = require('fs');
+
+fs.readFile('/Users/joe/test.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  const mongodbUrl=data;
+});
 
 const app = express();
 
@@ -12,7 +21,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-avinash_kodali:Avinash@cluster0.jvbhy29.mongodb.net/todolistDB", {useNewUrlParser: true});
+mongoose.connect(mongodbUrl+"/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
   name: String
