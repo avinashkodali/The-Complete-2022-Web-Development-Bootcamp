@@ -54,7 +54,6 @@ app.post("/register", function(req, res) {
         console.log(err);
       });
   });
-
 app.post("/login",function(req,res){
     const username=req.body.username;
     const password=md5(req.body.password);
