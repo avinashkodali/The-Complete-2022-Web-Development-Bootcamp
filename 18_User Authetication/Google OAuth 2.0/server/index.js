@@ -5,9 +5,9 @@ const qs = require('qs');
 const app = express();
 const port = 5000;
 
-const CLIENT_ID = '1083993418118-t1feivpv1rre7htqj8vjsqpjivs4314h.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
-const REDIRECT_URI = 'http://localhost:5000/auth/callback';
+const CLIENT_ID = 'xxxxxxx';
+const CLIENT_SECRET = 'xxxxxxxx';
+const REDIRECT_URI = 'xxxxxxxx';
 
 app.get('/auth/google', (req, res) => {
   const googleAuthURL = 'https://accounts.google.com/o/oauth2/v2/auth';
