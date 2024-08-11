@@ -55,7 +55,7 @@ Retail Rush is a dynamic and user-friendly e-commerce website built using React 
 ### Steps to Run Locally
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/avinashkodali/retail-rush.git
+   git clone https://github.com/avinashkodali/Web-Development-Projects.git
    cd retail-rush
    ```
 
